@@ -1,7 +1,13 @@
+import ConcertCard from "./ConcertCard";
+
 const ConcertList = ({concerts}) => {
     
     const concertList = concerts.map((concert) => {
-        return <p>{concert.artist}</p>    
+        return(
+            <ConcertCard key={concert.id}
+                         concert={concert}/>
+        ) 
+        
     });
     
     return ( 
