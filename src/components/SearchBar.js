@@ -11,7 +11,7 @@ const SearchBar = ({setSearchInput}) => {
 
     return ( 
     <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Enter your favourite artist" name="searchQuery" onChange={(event) => {
+        <input className="searchBar" type="text" placeholder="Enter your favourite artist" name="searchQuery" onChange={(event) => {
             setSearchQuery(event.target.value) 
         }} value={searchQuery}/>
         <input type="submit" value="Enter"/>

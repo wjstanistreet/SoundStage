@@ -1,8 +1,8 @@
 const ConcertCard = ({concert}) => {
     return ( <>
-    <h2><b>Artist: {concert.artist}</b></h2>
-    <p><b>Concert Date:</b> {concert.date}</p>
-    <p><b>Concert Time:</b> {concert.time}</p>
+    <h2><b> {concert.artist}</b></h2>
+    <p><b> Date:</b> {concert.date}</p>
+    <p><b> Time:</b> {concert.time}</p>
     <p><b>Ticket Price:</b> £{concert.ticketPrice}</p>
 
     <div>

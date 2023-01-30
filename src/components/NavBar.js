@@ -11,9 +11,9 @@ const NavBar = () => {
 
 
     <nav className= "nav">
-      <button> <a href="#">About</a></button>
-      <button><a href="#">Events</a></button>
-      <button><a href="#">Pricing</a></button>
+      <button> <a href="#">ABOUT</a></button>
+      <button><a href="#">EVENTS</a></button>
+      <button><a href="#">PRICING</a></button>
       {/* <a href="#"></a> */}
      
       </nav>
