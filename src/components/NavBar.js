@@ -10,11 +10,11 @@ const NavBar = () => {
         {/* <h2>SoundStage</h2> */}
 
 
-    <nav className= "nav"> 
-      <a href="#">About</a>
-      <a href="#">Events</a>
-      <a href="#">Pricing</a>
-      <a href="#"></a>
+    <nav className= "nav">
+      <button> <a href="#">About</a></button>
+      <button><a href="#">Events</a></button>
+      <button><a href="#">Pricing</a></button>
+      {/* <a href="#"></a> */}
      
       </nav>
 

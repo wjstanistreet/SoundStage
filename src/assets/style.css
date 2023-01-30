@@ -4,6 +4,11 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
+button {
+    font-family : inherit;
+    font-size: 1em;
+}
+
 .nav {
     margin: 0 auto;
     display: flex;
@@ -37,9 +42,3 @@ cursor: pointer;
     background-color: black;
   }
 
- /* .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
- } 
-   */
