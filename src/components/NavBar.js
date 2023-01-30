@@ -8,6 +8,8 @@ const NavBar = () => {
     </style>
       <img className = "SoundStageLogo" src= {require("../assets/soundstage.png")}></img>
         {/* <h2>SoundStage</h2> */}
+
+
     <nav className= "nav"> 
       <a href="#">About</a>
       <a href="#">Events</a>
@@ -15,6 +17,9 @@ const NavBar = () => {
       <a href="#"></a>
      
       </nav>
+
+      <img className ="concertImage" src= {require("../assets/concert.jpg")}></img> 
+
      </div>
     )}
 
