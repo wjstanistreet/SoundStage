@@ -6,6 +6,9 @@ function App() {
   return (
   <>
 <div className = "header">
+<style className ="font">
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+</style>
   <img className = "SoundStageLogo" src= {require("./assets/soundstage.png")}></img>
     {/* <h2>SoundStage</h2> */}
 <nav className= "nav"> 

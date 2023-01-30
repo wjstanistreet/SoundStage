@@ -1,4 +1,9 @@
 
+body {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
 
 .SoundStageLogo{
 align-items: center;
