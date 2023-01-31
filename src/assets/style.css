@@ -4,6 +4,11 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
+.header{
+   background-color: rgba(60, 57, 57, 0.592); 
+   overflow: hidden;
+}
+
 .concertHeader {
     text-align: center;
 }
@@ -21,12 +26,7 @@ button {
 }
 .concertCard {
     padding: 3em;
-     /* display: grid;
-    gap: 1px; */
-    /* grid-template-columns: repeat(3, 2fr); */
-    /* width: 50px; */
     border: 0.5em solid  black;
-    /* margin: 20em; */
     border-radius: 25%;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -42,19 +42,30 @@ button {
 
 
 .nav {
-    display: flex;
-    border: 4em; 
-    float:left;
-    align-content:space-around;
+    /* display: flex;
+    border: 4em;  */
+    float:right;
+    /* align-content:space-around;
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
+    list-style-type: none;
     margin: 20; 
     position: relative;
 	text-align: center;
-    flex-direction: row;
+    flex-direction: row; */
+}
 
+nav ul {
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+}
 
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
 }
 
 .concertImage{
@@ -77,8 +88,8 @@ margin-top:16px;
 cursor: pointer;
 }
 
-.header {
+/* .header {
     text-align: center;
     background-color: black;
-  }
+  } */
 
