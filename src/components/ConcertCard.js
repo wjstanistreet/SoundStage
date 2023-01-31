@@ -1,5 +1,6 @@
 const ConcertCard = ({concert}) => {
-    return ( <>
+    return ( 
+    <div className="concertCard">
     <h2><b> {concert.artist}</b></h2>
     <p><b> Date:</b> {concert.date}</p>
     <p><b> Time:</b> {concert.time}</p>
@@ -8,9 +9,7 @@ const ConcertCard = ({concert}) => {
     <div>
         <p><b>Location:</b> London</p>
     </div>
-
-    
-    </> );
+    </div> );
 }
  
 export default ConcertCard;

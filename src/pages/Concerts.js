@@ -20,8 +20,12 @@ const Concerts = () => {
     )};
 
     return (
+        
+        <div > 
         <div>
-            <label>Sort by: </label>
+        <h1 className="concertHeader">Concerts</h1>
+        </div>          
+            <label >Sort by: </label>  
             <select onChange={handleSort} >
                 <option value="">All Concerts </option>
                 <option value="ticketPrices">Descending Ticket Price</option>

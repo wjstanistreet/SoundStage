@@ -4,14 +4,34 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
+.concertHeader {
+    text-align: center;
+}
+
 .footer {
-  flex-direction:row; 
+  padding: 3em;
+  justify-content: space-evenly;
+  display: flex; 
+
 }
 
 button {
     font-family : inherit;
     font-size: 1em;
-
+}
+.concertCard {
+    padding: 3em;
+     /* display: grid;
+    gap: 1px; */
+    /* grid-template-columns: repeat(3, 2fr); */
+    /* width: 50px; */
+    border: 0.5em solid  black;
+    /* margin: 20em; */
+    border-radius: 25%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: inline-block;
 }
 
 .searchBar{
@@ -19,12 +39,21 @@ button {
     font-size: 1em;
 }
 
+
+
 .nav {
     display: flex;
+    border: 4em; 
     float:left;
     align-content:space-around;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 20; 
+    position: relative;
 	text-align: center;
+    flex-direction: row;
+
 
 }
 
