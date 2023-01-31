@@ -4,7 +4,7 @@ const ConcertCard = ({concert}) => {
     <p><b> Date:</b> {concert.date}</p>
     <p><b> Time:</b> {concert.time}</p>
     <p><b>Ticket Price:</b> £{concert.ticketPrice}</p>
-
+    <p><b>Venue Capacity:</b> {concert.capacity}</p>
     <div>
         <p><b>Location:</b> London</p>
     </div>

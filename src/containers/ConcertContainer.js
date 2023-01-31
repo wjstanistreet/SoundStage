@@ -16,12 +16,12 @@ const ConcertContainer = ({sortedConcerts}) => {
     }, [])
 
         
-        console.log(sortedConcerts)
+    console.log(sortedConcerts)
 
     return ( 
         <>
             <SearchBar setSearchInput={setSearchInput}/>
-            <ConcertList concerts={concerts} searchInput={searchInput}/>
+            <ConcertList concerts={sortedConcerts === undefined? concerts : sortedConcerts} searchInput={searchInput}/>
 
         </>
     );
