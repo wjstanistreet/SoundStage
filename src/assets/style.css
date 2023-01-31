@@ -4,9 +4,14 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
+.footer {
+  flex-direction:row; 
+}
+
 button {
     font-family : inherit;
     font-size: 1em;
+
 }
 
 .searchBar{
@@ -15,12 +20,11 @@ button {
 }
 
 .nav {
-    margin: 0 auto;
     display: flex;
     float:left;
     align-content:space-around;
     justify-content: space-evenly;
-
+	text-align: center;
 
 }
 
