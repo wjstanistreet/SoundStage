@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../assets/style.css'; 
 
 const NavBar = () => {
@@ -12,13 +13,13 @@ const NavBar = () => {
 
     <nav className= "nav">
       <button> <a href="#">ABOUT</a></button>
-      <button><a href="#">EVENTS</a></button>
+      <button><Link to="/concerts">Concerts</Link></button>
       <button><a href="#">PRICING</a></button>
       {/* <a href="#"></a> */}
      
       </nav>
 
-      <img className ="concertImage" src= {require("../assets/concert.jpg")}></img> 
+      
 
      </div>
     )}

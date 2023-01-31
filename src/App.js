@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ConcertContainer from './containers/ConcertContainer';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
+import Concerts from './pages/Concerts';
 
 
 function App() {
@@ -12,16 +13,17 @@ function App() {
     <div className="App">
 
     <NavBar/>
+    <img className ="concertImage" src= {require("./assets/concert.jpg")}></img> 
     <ConcertContainer/>
-    <Footer/>
+    
 
    
     </div>
 
     <Routes>
-      
+      <Route path="/concerts" element={<Concerts/>}/>
     </Routes>
-   
+    <Footer/>
     </BrowserRouter>
 
 );
