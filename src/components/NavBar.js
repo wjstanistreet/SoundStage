@@ -7,7 +7,7 @@ const NavBar = () => {
     <style className ="font">
     @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
     </style>
-      <img className = "SoundStageLogo" src= {require("../assets/soundstage.png")}></img>
+      <img className = "SoundStageLogo" src= {require("../assets/soundstage-alt-bg.png")}></img>
         {/* <h2>SoundStage</h2> */}
 
 

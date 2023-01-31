@@ -1,4 +1,5 @@
 import ConcertCard from "./ConcertCard";
+import '../assets/style.css'; 
 
 const ConcertList = ({concerts, searchInput}) => {
 
@@ -18,7 +19,7 @@ const ConcertList = ({concerts, searchInput}) => {
         )});
 
     return ( 
-        <div>
+        <div className="concertList">
             {searchInput === ''? concertList : filteredConcertList.length === 0 ? "Sorry, no concert found" : filteredConcertList}
         </div> 
     );

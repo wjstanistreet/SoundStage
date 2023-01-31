@@ -19,19 +19,25 @@ button {
     font-family : inherit;
     font-size: 1em;
 }
-.concertCard {
-    padding: 3em;
-     /* display: grid;
-    gap: 1px; */
-    /* grid-template-columns: repeat(3, 2fr); */
-    /* width: 50px; */
-    border: 0.5em solid  black;
-    /* margin: 20em; */
-    border-radius: 25%;
-    justify-content: space-evenly;
+
+.concertList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
+}
+
+.concertCard {
+    background-color: #0c0032;
+    padding: 3em;
+    margin: 0.5em;
+
+    border: 2px solid #1d4183;
+    border-radius: 35px;
+    justify-content: space-evenly;
+    flex-wrap: row wrap;
     justify-content: space-between;
     display: inline-block;
+
 }
 
 .searchBar{
@@ -57,13 +63,20 @@ button {
 
 }
 
+.hero {
+    background-image: url("./concert.jpg");
+}
+
 .concertImage{
-     width: 15in;
-     height:fit-content;
+    height: 50em;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     position: relative;
+     position: fixed;
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
 
