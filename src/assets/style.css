@@ -118,12 +118,23 @@ nav a :hover ::before{
 
 
 }
+
+.planningImage{
+    display:flex; 
+    float: right;
+    height: 400px;
+    width: 500px; 
+}
 .SoundStageLogo{
 position: relative;
 border-radius: 650px; 
 width: 150px;
 float:left;
 cursor: pointer;
+}
+
+.HowItWorks {
+    text-align: left;
 }
 
 
