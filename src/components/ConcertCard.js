@@ -1,6 +1,7 @@
 const ConcertCard = ({concert}) => {
     return ( 
     <div className="concertCard">
+     <img src={require("../assets/Tupac.jpg")}></img>
     <h2><b> {concert.artist}</b></h2>
     <p><b> Date:</b> {concert.date}</p>
     <p><b> Time:</b> {concert.time}</p>

@@ -3,6 +3,7 @@ import ConcertCard from "../components/ConcertCard";
 import ConcertList from "../components/ConcertList";
 import SearchBar from "../components/SearchBar";
 import Concerts from "../pages/Concerts";
+import HowItWorks from "../pages/HowItWorks";
 
 const ConcertContainer = ({sortedConcerts}) => {
     
