@@ -1,7 +1,33 @@
+
 const ConcertCard = ({concert}) => {
+    
+    const imagesArray = [{"artistName" : "Tupac", "imgUrl" : "/Tupac.jpg"}]; function grabImage(inputArtist) {
+
+    let object = imagesArray.find((imgObject)=>{
+        if(imgObject.artistName == inputArtist){
+            return imgObject
+        }
+
+        // else {
+        //     return {"imgUrl" : "https://placebear.com/200/200"}
+            
+        // }
+    }); 
+      
+
+    if (object === undefined){
+        object={"imgUrl" : "https://placebear.com/200/200"}
+    }
+
+    return object.imgUrl; 
+
+}
+
+// {require("../assets/Tupac.jpg")}
+    
     return ( 
     <div className="concertCard">
-     <img src={require("../assets/Tupac.jpg")}></img>
+     <img src={grabImage(concert.artist)}></img>
     <h2><b> {concert.artist}</b></h2>
     <p><b> Date:</b> {concert.date}</p>
     <p><b> Time:</b> {concert.time}</p>
