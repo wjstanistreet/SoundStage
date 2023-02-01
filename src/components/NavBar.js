@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/style.css";
+import Login from "./Login";
 
 const NavBar = () => {
   return (
@@ -32,6 +33,7 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+      <Login/>
     </div>
   );
 };
