@@ -5,10 +5,10 @@ import SearchBar from "../components/SearchBar";
 import Concerts from "../pages/Concerts";
 import HowItWorks from "../pages/HowItWorks";
 
-const ConcertContainer = ({sortedConcerts}) => {
+const ConcertContainer = ({sortedConcerts, searchInput}) => {
     
     const [concerts, setConcerts] = useState([]);
-    const [searchInput, setSearchInput] = useState("");
+    
 
     useEffect(() => {
         fetch("http://localhost:8080/concerts")
@@ -21,7 +21,7 @@ const ConcertContainer = ({sortedConcerts}) => {
 
     return ( 
         <div>
-            <SearchBar setSearchInput={setSearchInput}/>
+            
             <div className="concertList">           
                  <ConcertList concerts={sortedConcerts === undefined? concerts : sortedConcerts} searchInput={searchInput}/>
             </div>

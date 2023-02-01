@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import SearchBar from "../components/SearchBar";
 
 import ConcertContainer from "../containers/ConcertContainer";
 
 const Concerts = () => {
     
     const [sortedConcerts, setSortedConcerts] = useState([]);
+    const [searchInput, setSearchInput] = useState("");
 
     useEffect(() => {
         fetch(`http://localhost:8080/concerts`)
@@ -33,8 +35,9 @@ const Concerts = () => {
                 <option value="capacities">Ascending Capacities</option>
                 <option value="ticketPrices/over150">Luxury Concerts</option>
             </select>
-            </div>   
-            <ConcertContainer sortedConcerts={sortedConcerts}/>
+            </div>
+            <SearchBar setSearchInput={setSearchInput}/>  
+            <ConcertContainer sortedConcerts={sortedConcerts} searchInput={searchInput}/>
         </div>
     );
 }

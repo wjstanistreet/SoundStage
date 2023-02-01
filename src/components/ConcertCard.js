@@ -1,4 +1,3 @@
-
 const ConcertCard = ({concert}) => {
     
     const imagesArray = [{"artistName" : "Tupac", "imgUrl" : "/Tupac.jpg"}]; function grabImage(inputArtist) {
@@ -16,7 +15,7 @@ const ConcertCard = ({concert}) => {
         object={"imgUrl" : "https://placebear.com/200/200"}
     }
 
-    return object.imgUrl; 
+    return object.imgUrl;
 
 }
 

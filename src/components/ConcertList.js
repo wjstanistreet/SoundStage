@@ -1,5 +1,6 @@
 import ConcertCard from "./ConcertCard";
 
+
 const ConcertList = ({concerts, searchInput}) => {
 
     const concertList = concerts.map((concert) => {
@@ -19,7 +20,7 @@ const ConcertList = ({concerts, searchInput}) => {
 
     return ( 
         <div className="filteredConcertList">
-            {searchInput === ''? concertList : filteredConcertList.length === 0 ? "Sorry, no concert found" : filteredConcertList}
+            {searchInput === '' || searchInput === undefined? concertList : filteredConcertList.length === 0 ? "Sorry, no concert found" : filteredConcertList}
         </div> 
     );
 }
