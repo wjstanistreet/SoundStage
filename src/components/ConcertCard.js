@@ -8,10 +8,7 @@ const ConcertCard = ({concert}) => {
             return imgObject
         }
 
-        // else {
-        //     return {"imgUrl" : "https://placebear.com/200/200"}
-            
-        // }
+    
     }); 
       
 
