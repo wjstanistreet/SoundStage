@@ -170,3 +170,74 @@ cursor: pointer;
 }
 
 
+.featured-artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: 1em;
+    gap: 2em;
+    height: auto;
+    
+    justify-items: center;
+    /* justify-items: ; */
+    /*border: 0.25em solid;
+    border-radius: 25%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: 260px;  */
+}
+
+.featured-artists > * {
+    border: 2px solid rgb(169, 169, 169);
+}
+
+.featured-artists > * > img {
+    max-width: 100%;
+    width: 250px;
+    height: 200px;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reviews > * {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(197, 197, 197);
+    padding: 10px;
+}
+
+.reviews > * > h2 {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.sponsors {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.sponsors > * > img {
+    max-width: 100%;
+    width: 250px;
+    height: 200px;
+    
+}
+
+.atos > img {
+    height: auto;
+}
+
+.apple > img{
+    height: 225px;
+    width: 325px;
+}

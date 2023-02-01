@@ -1,49 +1,27 @@
-const FeaturedArtists = ({concert}) => {
-    
-    const imagesArray = [{"artistName" : "Tupac", "imgUrl" : "/Tupac.jpg"}, 
-                        {"artistName" : "Adele", "imgUrl" : "/Adele.jpg"}, 
-                        {"artistName" : "FleetwoodMac", "imgUrl" : "/FleetwoodMac.jpg"}
-                        ];
+import "../assets/style.css";
 
-    function grabImage(inputArtist) {
-    let object = imagesArray.find((imgObject)=>{
-        if(imgObject.artistName == inputArtist){
-            return imgObject
-        }
-    }); 
-    if (object === undefined){
-        object={"imgUrl" : "https://placebear.com/200/200"}
-    }
-    return object.imgUrl;
-
-    }
-
-
-return(<div>
-    
-</div>
+const FeaturedArtists = () => {
+    return(
+        <>
+            <h1>Featured Artists</h1>
+            <div className="featured-artists">
+                <div className="tupac">
+                    <img src="./Tupac.jpg"/>
+                    <h2>Tupac</h2>
+                </div>
+                <div className="adele">
+                    <img src="./Adele.jpg"/>
+                    <h2>Adele</h2>
+                </div>
+                <div className="FleetwoodMac">
+                    <img src="./FleetwoodMac.jpg"/>
+                    <h2>Fleetwood Mac</h2>
+                </div>
+            </div>
+        </>
     )
-    
-    
-    //     let object = imagesArray.map((imgObject) => {
-    //     return ( 
-    //         <div className="concertCard">
-    //          <img src={grabImage(concert.artist)}></img>
-    //         <div>
-    //             <p><b>Location:</b> London</p>
-    //         </div>
-    //         </div> );
-
-    
-    // }); 
-      
 
 
 }
 
-// {require("../assets/Tupac.jpg")}
-    
-
-// }
- 
 export default FeaturedArtists;
