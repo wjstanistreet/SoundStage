@@ -10,7 +10,7 @@ const NavBar = () => {
       </style>
       <img
         className="SoundStageLogo"
-        src={require("../assets/SoundStageLogo.png")} onClick= "/Home"
+        src={require("../assets/WhiteSoundStageLogo.png")} onClick= "/Home"
 
       ></img>
       {/* <h2>SoundStage</h2> */}
@@ -23,8 +23,6 @@ const NavBar = () => {
           <li>
             {/* {" "} */}
             <Link to="/HowItWorks">HOW IT WORKS</Link>
-
-            {/* src/pages/HowItWorks.js */}
           </li>
           <li>
             <Link to="/concerts">CONCERTS</Link>

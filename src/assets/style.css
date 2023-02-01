@@ -8,7 +8,7 @@ body {
 }
 
 .header{
-   background-color: #219ebc; 
+   background-color: black; 
    overflow: hidden;
 }
 
@@ -29,27 +29,46 @@ header ::after{
   display: flex; 
   margin-top: auto;
   width: 100%; 
-  color: #219ebc;
+  color: black;
 
+}
+
+.sortBy {
+float: right;
+padding: 2em; 
 }
 
 button {
     font-family : inherit;
     font-size: 1em;
 }
-.concertCard {
+ .concertCard {
     padding: 2em;
-    /* border: 0.25em solid  #c6f4ff; */
+    border: 0.25em solid  ;
     border-radius: 25%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     justify-content: space-between;
     display: inline-block;
+} 
+
+
+.filteredConcertList {
+    padding: 2em;
+    border: 0.25em solid  ;
+
+    border-radius: 25%;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
 }
 
 .searchBar{
     font-family: inherit;
     font-size: 1em;
+    float: left;
+
 }
 
 .nav {
@@ -81,7 +100,7 @@ nav li {
 }
 
 nav a {
-    color: #444;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -117,6 +136,10 @@ nav a :hover ::before{
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
 
+}
+
+.concertList {
+    display: flex; 
 }
 
 .planningImage{

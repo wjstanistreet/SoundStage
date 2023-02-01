@@ -20,11 +20,13 @@ const ConcertContainer = ({sortedConcerts}) => {
     console.log(sortedConcerts)
 
     return ( 
-        <>
+        <div>
             <SearchBar setSearchInput={setSearchInput}/>
-            <ConcertList concerts={sortedConcerts === undefined? concerts : sortedConcerts} searchInput={searchInput}/>
+            <div className="concertList">           
+                 <ConcertList concerts={sortedConcerts === undefined? concerts : sortedConcerts} searchInput={searchInput}/>
+            </div>
 
-        </>
+        </div>
     );
 }
  

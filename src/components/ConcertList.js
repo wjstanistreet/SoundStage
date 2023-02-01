@@ -18,7 +18,7 @@ const ConcertList = ({concerts, searchInput}) => {
         )});
 
     return ( 
-        <div>
+        <div className="filteredConcertList">
             {searchInput === ''? concertList : filteredConcertList.length === 0 ? "Sorry, no concert found" : filteredConcertList}
         </div> 
     );
