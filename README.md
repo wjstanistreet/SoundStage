@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<div align="center">
+    <img src=./src/assets/WhiteSoundStageLogo.png alt="SoundStage Team Logo"/>
+    <h1>SoundStage: Getting you straight to the stage</h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Description
+SoundStage allows users to view a range of concerts fetched from an API. Users can filter concerts by artist name and sort the list of concerts by ticket price and venue capacity. A user can also log in, so long as they have an account existing in the database. 
 
-In the project directory, you can run:
+Technologies used:
 
-### `npm start`
+| Technology  | Version |
+|-------------|---------|
+| Node        | 18.11   |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app works directly with the Track 2 Backend Concert API, which can be found [here](https://github.com/caitlinmillar/Backend_Concert). Follow their set up instructions before you get started installing SoundStage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## Installation Instructions
 
-### `npm test`
+Follow these steps to get started with the SoundStage app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. If you have HomeBrew installed, use the following line to install Node. This includes npm:
+```
+$ brew install node
+```
+Otherwise, install it from [here](https://nodejs.org/en/download/)
 
-### `npm run build`
+2. To access this application, you can clone this repository using the terminal on your system using:
+```
+$ git clone https://github.com/wjstanistreet/SoundStage.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Within the newly cloned repository, install the default Node modules using:
+```
+$ npm i
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. You will also need to install React Router, using:
+```
+$ npm install react-router-dom@6
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. To get the web app running, use:
+```
+$ npm start
+```
+SoundStage should now be open in your default browser!
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Aims
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The website has a landing page, a page describing how purchasing a ticket would work, and a concerts page showing a list of available concerts. 
+- Users can filter concerts by artist name, sort the list of concerts by ticket price and venue capacity, and select all luxury concerts (where the ticket price is > 150).
+- A user can also log in with their username, so long as they have an account existing in the database. A rejection notice will show if the username is invalid and not in the database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Here is the initial wireframe and components diagram that was used to plan the design for the website:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div>
+    <img src="./src/assets/LandingMVP-Wireframe.png"/>
+    <img src="./src/assets/ConcertsMVP-Wireframe.png"/>
+    <img src="./src/assets/Components-Diagram.png"/>
+</div>
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Extensions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Allow someone to create a user account and have it save in the database.
+- Allow users to add and remove themselves to and from concerts and have it save in the database. 
