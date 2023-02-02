@@ -1,3 +1,5 @@
+import "../assets/style.css"
+
 const LoginForm = (showLogin) => {
     return ( 
         <div className={`${showLogin ? "active" : ""} show`}>

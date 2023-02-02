@@ -12,11 +12,10 @@ const Login = () => {
     }
 
     return ( 
-        <>
-            <p className="login-bar">Login</p>
+        <div className="login-bar">
             <LoginButton handleLoginClick ={handleLoginClick}/>
             <LoginForm showLogin = {showLogin} />
-        </>
+        </div>
         
      );
 }
