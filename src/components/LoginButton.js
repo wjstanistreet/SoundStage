@@ -1,13 +1,14 @@
 import Login  from "./Login";
 import '../assets/style.css'; 
 
+
 const LoginButton = ({handleLoginClick}) => {
     const handleClick = () => {
         handleLoginClick();
     }
 
     return (  
-        <div>
+        <div className="login-button" data-toggle="modal" data-target="#myModal">
             <button onClick={handleClick}>Log In</button>
         </div>
     );

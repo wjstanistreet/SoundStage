@@ -360,17 +360,25 @@ cursor: pointer;
   background-color: #7FFFD4;
   color: #1E90FF;
 }
-
+*/
+.login-bar{
+    float: right;
+    padding-right: 2em;
+}
 .show {
-  display: block;
+  display: inline-block;
   transition: 800ms;
   opacity: 1;
+  
+}
+.show.active {
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity: 0;
+    /* animation: ; */
 }
 
-.show.active {
-  transform: translateY(100px) scale(0) rotateY(180deg);
-  opacity: 0;
-}
+
+/*
 
 
 label {

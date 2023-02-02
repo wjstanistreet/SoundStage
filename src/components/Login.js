@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LoginButton from "./LoginButton";
 import LoginForm from "./LoginForm";
+import "../assets/style.css";
 
 const Login = () => {
 
@@ -8,8 +9,9 @@ const Login = () => {
 
     const handleLoginClick = () => {
         setShowLogin((showLogin) => !showLogin);
-        console.log(showLogin);
     }
+
+    //
 
     return ( 
         <div className="login-bar">
