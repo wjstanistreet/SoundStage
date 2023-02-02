@@ -9,11 +9,11 @@ const NavBar = () => {
         @import
         url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
       </style>
-      <img
-        className="SoundStageLogo"
-        src={require("../assets/WhiteSoundStageLogo.png")} onClick= "/Home"
-
-      ></img>
+        <Link to = '/'> 
+         <div>
+      <img src = {require("../assets/WhiteSoundStageLogo.png")} alt='Logo' className='SoundStageLogo'/>
+        </div>
+      </Link>
       {/* <h2>SoundStage</h2> */}
 
       <nav className="nav">

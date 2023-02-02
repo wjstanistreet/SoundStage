@@ -1,6 +1,18 @@
 const ConcertCard = ({concert}) => {
     
-    const imagesArray = [{"artistName" : "Tupac", "imgUrl" : "/Tupac.jpg"}]; function grabImage(inputArtist) {
+    const imagesArray = 
+    [{"artistName" : "Tupac", "imgUrl" : "/Tupac.jpg"},
+     {"artistName" : "Adele", "imgUrl" : "/Adele.jpg"}, 
+     {"artistName" : "Fleetwood Mac", "imgUrl" : "/FleetwoodMac.jpg"}, 
+     {"artistName" : "Billy Joel", "imgUrl" : "/BillyJoel.jpg"},
+      {"artistName" : "Kendrick Lamar", "imgUrl" : "/KendrickLamar.jpg"},
+       {"artistName" : "Fredo", "imgUrl" : "/Fredo.jpeg"},
+       {"artistName" : "Alestorm", "imgUrl" : "/Alestorm.jpeg"},
+       {"artistName" : "Will's Jamboree", "imgUrl" : "Will.jpg"} ,
+       {"artistName" : "Eminem", "imgUrl" : "Eminem.jpg"},
+       {"artistName" : "Lizzo", "imgUrl" : "/Lizzo.jpg"}, 
+    {"artistName" : "Track 2", "imgUrl" : "/TRack2.png"}, 
+{"artistName" : "Saad's Jamboree", "imgUrl" : "/Saad.jpeg"} ]; function grabImage(inputArtist) {
 
     let object = imagesArray.find((imgObject)=>{
         if(imgObject.artistName == inputArtist){
